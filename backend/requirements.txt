@@ -1,0 +1,5 @@
+azure-monitor-query
+flask
+flask-cors
+python-dotenv
+pandas
