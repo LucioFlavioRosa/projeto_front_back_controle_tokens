@@ -1,8 +1,0 @@
-runtime: python|3.11
-entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
-environment:
-  AZURE_KEY_VAULT_URI: "https://<seu-keyvault>.vault.azure.net/"
-  APPLICATION_INSIGHTS_CONNECTION_STRING: "@Microsoft.KeyVault(SecretUri=https://<seu-keyvault>.vault.azure.net/secrets/ApplicationInsightsConnectionString)"
-  APPINSIGHTS_INSTRUMENTATIONKEY: "@Microsoft.KeyVault(SecretUri=https://<seu-keyvault>.vault.azure.net/secrets/AppInsightsInstrumentationKey)"
-  # Adicione outras variáveis de ambiente conforme necessário
-  # Exemplo: DB_CONNECTION_STRING, SECRET_KEY, etc.
