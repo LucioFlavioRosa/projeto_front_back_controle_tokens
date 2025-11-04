@@ -1,6 +1,0 @@
-fastapi
-uvicorn[standard]
-pydantic
-azure-monitor-query
-python-dotenv
-pandas
